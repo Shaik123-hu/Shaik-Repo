@@ -9,9 +9,9 @@ pipeline {
         // Nexus details
         NEXUS_VERSION     = "nexus3"
         NEXUS_PROTOCOL    = "http"
-        NEXUS_URL         = "3.83.214.6:8081"
-        NEXUS_REPOSITORY  = "sunil-app"
-        NEXUS_CREDENTIAL_ID = "Nexus-server"
+        NEXUS_URL         = "44.206.236.146:8081"
+        NEXUS_REPOSITORY  = "Shaik-Repo"
+        NEXUS_CREDENTIAL_ID = "nexus_keygen"
 
         // SonarQube scanner tool
         SCANNER_HOME = tool 'sonar_scanner'
@@ -23,7 +23,7 @@ pipeline {
     stages {
         stage("Clone Code") {
             steps {
-                git branch: 'main', url: 'https://github.com/sunil-th/sunil-app.git'
+                git branch: 'main', url: 'https://github.com/Shaik123-hu/Shaik-Repo.git'
             }
         }
 
@@ -100,7 +100,7 @@ pipeline {
                 slackSend(
                     channel: "${SLACK_CHANNEL}",
                     color: "#36a64f",
-                    message: "✅ Jenkins Declarative Pipeline for *Sunil App* deployed successfully to Tomcat! Job: ${env.JOB_NAME} [${env.BUILD_NUMBER}]"
+                    message: "✅ Jenkins Declarative Pipeline for *Shaik Yunus* deployed successfully to Tomcat! Job: ${env.JOB_NAME} [${env.BUILD_NUMBER}]"
                 )
             }
         }
