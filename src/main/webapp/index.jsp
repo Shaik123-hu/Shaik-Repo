@@ -51,7 +51,7 @@
     </div>
 
     <footer>
-        &copy; <%= new java.util.Date().getYear() + 1900 %> Sunil App. All Rights Reserved.
+        &copy; <%= new java.util.Date().getYear() + 1900 %> YY. All Rights Reserved.
     </footer>
 </body>
 </html>
