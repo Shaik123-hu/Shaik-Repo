@@ -35,10 +35,10 @@ pipeline {
 
         stage("SonarQube Analysis") {
             steps {
-                withSonarQubeEnv('sonarqube-server') {
+                withSonarQubeEnv('sonarqube_server') {
                     sh '''$SCANNER_HOME/bin/sonar-scanner \
-                        -Dsonar.projectKey=sunil-app \
-                        -Dsonar.projectName="Sunil App" \
+                        -Dsonar.projectKey=Shaik-Repo \
+                        -Dsonar.projectName="Shaik-Repo" \
                         -Dsonar.projectVersion=1.0 \
                         -Dsonar.sources=src/main/java \
                         -Dsonar.java.binaries=target/classes '''
