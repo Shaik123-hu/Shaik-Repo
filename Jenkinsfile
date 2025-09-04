@@ -10,7 +10,7 @@ pipeline {
         NEXUS_VERSION     = "nexus3"
         NEXUS_PROTOCOL    = "http"
         NEXUS_URL         = "44.206.236.146:8081"
-        NEXUS_REPOSITORY  = "Shaik-Repo"
+        NEXUS_REPOSITORY  = "shaik-Repo"
         NEXUS_CREDENTIAL_ID = "nexus_keygen"
 
         // SonarQube scanner tool
