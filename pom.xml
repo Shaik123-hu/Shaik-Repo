@@ -65,7 +65,7 @@
     <distributionManagement>
         <repository>
             <id>Nexus-server</id>
-            <url>http://3.83.214.6:8081/repository/sunil-app/</url>
+            <url>http://44.206.236.146:8081/repository/Shaik-Repo/</url>
         </repository>
     </distributionManagement>
 
