@@ -88,7 +88,7 @@ pipeline {
                         sh """
                             curl -u $TOMCAT_USER:$TOMCAT_PASS \
                                  -T ${warFile} \
-                                 "http://3.89.121.33:8080/manager/text/deploy?path=/sunil-app&update=true"
+                                 "http://52.23.219.234:8080/manager/text/deploy?path=/sunil-app&update=true"
                         """
                     }
                 }
